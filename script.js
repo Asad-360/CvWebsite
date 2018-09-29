@@ -1,16 +1,15 @@
 $(document).ready(function () {
 
     $(window).on("scroll", function () {
-const x=870;
+const x=560;
         const scrollHeight = $(window).height();
-        var scrollTop = $(window).scrollTop()+scrollHeight;
-        //console.log(scrollHeight + '--' + scrollTop);
+        var scrollTop = $(window).scrollTop();
+        console.log(scrollHeight + '--' + scrollTop);
         if (scrollTop > x){
-alert('working');
             $(".html").animate({
                 width: '80%'
             }, 1000,function(){});
-           /* $(".css, .wcf").animate({
+            $(".css, .wcf").animate({
                 width: '70%'
             }, 1000,function(){});
             $(".js").animate({
@@ -32,7 +31,7 @@ alert('working');
             $(".webapi").animate({
                 width: '88%'
             }, 1000,function(){});
-           */
+           
         } 
 
     });
